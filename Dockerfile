@@ -1,4 +1,4 @@
-FROM chrohrer/freeradius:0.3
+FROM chrohrer/freeradius:latest
 
 LABEL maintainer="chris.rohrer@ubuntunet.net"
 
