@@ -14,4 +14,4 @@ COPY Radius/sites-enabled/default /etc/raddb/sites-enabled/default
 
 EXPOSE 1812/udp 1813/udp
 
-CMD ["radiusd", "-sfxl", "stdout"]
+CMD ["radiusd", "-sfl", "stdout"]
