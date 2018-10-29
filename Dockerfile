@@ -1,4 +1,4 @@
-FROM chrohrer/freeradius:latest
+FROM chrohrer/freeradius:0.4
 
 LABEL maintainer="chris.rohrer@ubuntunet.net"
 
@@ -14,4 +14,4 @@ COPY Radius/sites-enabled/default /etc/raddb/sites-enabled/default
 
 EXPOSE 1812/udp 1813/udp
 
-CMD ["radiusd", "-sfl", "stdout"]
+CMD ["radiusd", "-sfxl", "stdout"]
